@@ -6,9 +6,9 @@ class person{
 	}
 }
 
-person.prototype.greet=function()
+greet()
 {
-	console.log("hi my name is"+`${this.name}`+,i am `${this.age}`+years old);
+	console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
 }
 
 class Employee extends person{
@@ -19,10 +19,10 @@ class Employee extends person{
 }
 
 
-person.prototype.jobGreet=function()
+jobGreet()
 {
-	console.log("hi my name is"+`${this.name}`+,"i am "`${this.age}`+"years old",
-			   "and my job title is"+`${this.jobTitle}`);
+	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is
+	${this.jobTitle}.`);
 }
 // Do not change code below this line
 window.Person = Person;
